@@ -35,7 +35,7 @@ h1.title{ font-size: 3rem; font-weight: 700; margin-bottom: 1.4rem;}
 @media screen and (max-width: 719px) {
 body { height: 100%;}
 .container{ position: relative;}
-.accordion__box{ max-width: 92rem; margin: 14.6rem 2.4rem; background: #fff; border-radius: 1rem; display: flex; padding:  13rem 2.4rem; flex-direction: column;}
+.accordion__box{ max-width: 92rem; margin: 14rem 2.4rem 9rem 2.4rem; background: #fff; border-radius: 1rem; display: flex; padding: 12rem 2.4rem 4rem 2.4rem; flex-direction: column;}
 .accordion__img--mob{ background-image: url(./images/illustration-woman-online-mobile.svg), url(./images/bg-pattern-mobile.svg); background-repeat: no-repeat; height: 24rem; width: 24rem; position:absolute; top: -11rem; left: 50%; transform: translateX(-50%); background-position: top left 50%, top 11.5rem left -0.5rem; background-size: contain;}
 .accordion__img--mob:before{ content: ""; position: absolute; background: url(./images/bg-pattern-mobile.svg)no-repeat; }
 .accordion__content{ color: #4B4C5F; font-size: 1.4em; flex: 35rem;}
