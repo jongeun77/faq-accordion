@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Chivo:wght@300;400;700&family=IBM+Plex+Sans:wght@400;600;700&family=Inter&family=Kumbh+Sans:wght@400;700&family=Spartan:wght@400;500;700&display=swap');
+body,html{ font-size: 62.5%; margin: 0; padding: 0; font-family: 'Kumbh Sans', sans-serif; }
+body{ background: linear-gradient( to bottom, hsl(273, 75%, 66%) , hsl(240, 73%, 65%)
+  ) no-repeat; height: 100vh; }
+*{ box-sizing: border-box; }
+@media screen and ( min-width: 921px) and (max-width: 1440px){
+.accordion__box{ max-width: 92rem; margin: 13rem auto; background: #fff url(./images/bg-pattern-desktop.svg)no-repeat left -57rem top -25rem/100%; border-radius: 1rem; display: flex; padding: 6.5rem 9.5rem 6.5rem 0; }
+.accordion__img{ flex: 38rem; background: url(./images/illustration-woman-online-desktop.svg)no-repeat left -13rem top 10%; height: 35.9rem; position:relative;}
+.accordion__img:before{ content: ""; position: absolute; top: 45%; left: -10rem; background: url(./images/illustration-box-desktop.svg)no-repeat; width: 15rem; height: 10.6rem;}
+.accordion__content{ color: #4B4C5F; font-size: 1.4em; flex: 35rem;}
+h1.title{ font-size: 3rem; font-weight: 700; margin-bottom: 1.4rem;}
+.accordion__title{ font-size: 1.4rem; font-weight: 400; padding: 1.7rem 0; border-bottom: 1px solid #E8E8EA; position: relative; cursor: pointer;}
+.accordion__title:after{ content: ""; position: absolute; top: 2.4rem; right: 2rem; background: url(./images/icon-arrow-down.svg)no-repeat; width: 1rem; height: 0.7rem;}
+.accordion__desc{ font-size: 1.2rem; color: #787887; padding: 1.7rem 0; font-weight: 400; cursor: pointer;}
+.accordion__desc:hover{ color: #F47B56;}
+.accordion__title.active{ font-weight: 700;}
+.accordion__title.active:after{ transform: rotate(180deg);}
+.accordion__title.active + .accordion__desc{ border-bottom: 1px solid #E8E8EA;}
+}
+@media screen and (max-width: 920px) and (min-width: 720px){
+  .accordion__box{ max-width: 92rem; margin: 13rem 3rem; background: #fff url(./images/bg-pattern-desktop.svg)no-repeat left -52rem top -25rem/100%; border-radius: 1rem; display: flex; padding: 6.5rem 3.5rem 6.5rem 0; }
+  .accordion__img{ flex: 38rem; background: url(./images/illustration-woman-online-desktop.svg)no-repeat left -8rem top 10%/40rem; height: 35.9rem; position:relative;}
+  .accordion__img:before{ content: ""; position: absolute; top: 45%; left: -10rem; background: url(./images/illustration-box-desktop.svg)no-repeat; width: 15rem; height: 10.6rem;}
+  .accordion__content{ color: #4B4C5F; font-size: 1.4em; flex: 35rem;}
+  h1.title{ font-size: 3rem; font-weight: 700; margin-bottom: 1.4rem;}
+  .accordion__title{ font-size: 1.4rem; font-weight: 400; padding: 1.7rem 0; border-bottom: 1px solid #E8E8EA; position: relative; cursor: pointer;}
+  .accordion__title:after{ content: ""; position: absolute; top: 2.4rem; right: 2rem; background: url(./images/icon-arrow-down.svg)no-repeat; width: 1rem; height: 0.7rem;}
+  .accordion__desc{ font-size: 1.2rem; color: #787887; padding: 1.7rem 0; font-weight: 400; cursor: pointer;}
+  .accordion__desc:hover{ color: #F47B56;}
+  .accordion__title.active{ font-weight: 700;}
+  .accordion__title.active:after{ transform: rotate(180deg);}
+  .accordion__title.active + .accordion__desc{ border-bottom: 1px solid #E8E8EA;}
+
+}
+@media screen and (max-width: 719px) {
+body { height: 100%;}
+.container{ position: relative;}
+.accordion__box{ max-width: 92rem; margin: 14.6rem 2.4rem; background: #fff; border-radius: 1rem; display: flex; padding:  13rem 2.4rem; flex-direction: column;}
+.accordion__img--mob{ background-image: url(./images/illustration-woman-online-mobile.svg), url(./images/bg-pattern-mobile.svg); background-repeat: no-repeat; height: 24rem; width: 24rem; position:absolute; top: -11rem; left: 50%; transform: translateX(-50%); background-position: top left 50%, top 11.5rem left -0.5rem; background-size: contain;}
+.accordion__img--mob:before{ content: ""; position: absolute; background: url(./images/bg-pattern-mobile.svg)no-repeat; }
+.accordion__content{ color: #4B4C5F; font-size: 1.4em; flex: 35rem;}
+h1.title{ font-size: 3rem; font-weight: 700; margin-bottom: 1.4rem; text-align: center;}
+.accordion__title{ font-size: 1.3rem; font-weight: 400; padding: 1.7rem 0; border-bottom: 1px solid #E8E8EA; position: relative; cursor: pointer; user-select: none;}
+.accordion__title:after{ content: ""; position: absolute; top: 2.4rem; right: 2rem; background: url(./images/icon-arrow-down.svg)no-repeat; width: 1rem; height: 0.7rem;}
+.accordion__desc{ font-size: 1.2rem; color: #787887; padding: 1.7rem 0; font-weight: 400; cursor: pointer;}
+.accordion__desc:hover{ color: #F47B56;}
+.accordion__title.active{ font-weight: 700;}
+.accordion__title.active:after{ transform: rotate(180deg);}
+.accordion__title.active + .accordion__desc{ border-bottom: 1px solid #E8E8EA;}
+
+
+}
